@@ -1,0 +1,98 @@
+/* css/style.css - Updated */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px; /* Increased width from 220px */
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #495057;
+  padding-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.sidebar li {
+  margin-bottom: 5px; /* Reduced margin slightly */
+  border-bottom: 1px solid #495057; /* Added border for separation */
+}
+
+.sidebar li:last-child {
+  border-bottom: none; /* Remove border from the last item */
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #adb5bd;
+  display: block;
+  padding: 12px 15px; /* Slightly increased padding */
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar a:hover {
+  background-color: #495057;
+  color: #fff;
+}
+
+.sidebar .logout-link {
+  margin-top: auto;
+  border-top: 1px solid #495057; /* Add border above logout */
+  padding-top: 10px; /* Add some space above logout */
+}
+
+/* Ensure logout link itself doesn't have the bottom border from li */
+.sidebar .logout-link li {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.main-content .header {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.main-content .header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.content-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
